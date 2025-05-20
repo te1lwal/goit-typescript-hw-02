@@ -1,6 +1,6 @@
 .image_modal {
-  background-color: bisque;
-  border-color: bisque !important;
+  background-color: #e9d8fd;
+  border-color: #e9d8fd !important;
   display: flex;
   flex-direction: column;
   align-items: center;

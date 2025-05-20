@@ -1,5 +1,5 @@
 .header {
-  background-color: #606c38;
+  background-color: #6c3296e7;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -25,9 +25,9 @@
 .search_button {
   margin: 20px auto;
   padding: 15px 30px;
-  background-color: beige;
+  background-color: #9f7aea80;
 }
 
 .search_button:hover {
-  background-color: bisque;
+  background-color: #9f7aea27;
 }
