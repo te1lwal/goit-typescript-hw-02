@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { ImageAPIResponse } from '../types/imageTypes';
 
 const ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY;
 
@@ -9,8 +10,11 @@ axios.defaults.params = {
 };
 axios.defaults.headers.common = { Authorization: `Client-ID ${ACCESS_KEY}` };
 
-export const fetchImages = async (query, page) => {
-  const response = await axios.get(`/search/photos`, {
+export const fetchImages = async (
+  query: string,
+  page: number
+): Promise<ImageAPIResponse> => {
+  const response = await axios.get<ImageAPIResponse>(`/search/photos`, {
     params: { query, page },
   });
   return {
